@@ -1,6 +1,7 @@
 version: '3'
 services:
   azure-vote-back:
+    platform: "linux/${ARCH:-amd64}"
     image: mcr.microsoft.com/oss/bitnami/redis:6.0.8
     container_name: azure-vote-back
     environment:
